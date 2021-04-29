@@ -33,6 +33,7 @@ dependencies:
   flutter_svg: ^0.22.0
   auth_buttons: ^1.0.1
   transition: ^2.0.1
+  pin_code_fields: ^7.0.0
 
 dev_dependencies:
   flutter_test:

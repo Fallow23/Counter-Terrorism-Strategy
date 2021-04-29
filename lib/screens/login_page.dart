@@ -1,4 +1,6 @@
+import 'package:contest/screens/home_screen.dart';
 import 'package:contest/screens/sign_up/sign_up_name.dart';
+import 'package:contest/screens/widgets/bottom_navigation.dart';
 import 'package:contest/screens/widgets/contest_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -91,7 +93,11 @@ class _LoginPageState extends State<LoginPage> {
                 height: 30,
               ),
               ContestButton(
-                onTap: () {},
+                onTap: () => Navigator.of(context).push(
+                  Transition(
+                      child: ContestBottomNavigation(),
+                      transitionEffect: TransitionEffect.RIGHT_TO_LEFT),
+                ),
                 height: 60,
                 width: double.infinity,
                 text: 'Login',
