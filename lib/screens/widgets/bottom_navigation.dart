@@ -1,4 +1,7 @@
+import 'package:contest/screens/emergency/report_screen.dart';
+import 'package:contest/screens/emergency_page.dart';
 import 'package:contest/screens/home_screen.dart';
+import 'package:contest/screens/profile_page.dart';
 import 'package:flutter/material.dart';
 
 class ContestBottomNavigation extends StatefulWidget {
@@ -11,9 +14,9 @@ class _ContestBottomNavigationState extends State<ContestBottomNavigation> {
   int currentIndex = 0;
   static List<Widget> _widgetOptions = [
     HomeScreen(),
-    HomeScreen(),
-    HomeScreen(),
-    HomeScreen(),
+    EmergencyPage(),
+    ReportPage(),
+    ProfilePage(),
   ];
 
   _itemTapped(int index) {

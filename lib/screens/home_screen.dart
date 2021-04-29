@@ -1,6 +1,8 @@
+import 'package:contest/screens/emergency/emergency_alert_signal.dart';
 import 'package:contest/screens/widgets/contest_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:transition/transition.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -8,7 +10,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -77,12 +78,18 @@ class _HomeScreenState extends State<HomeScreen> {
                           ],
                         ),
                         ContestButton(
-                            height: 50,
-                            width: 100,
-                            text: '+ New',
-                            textColor: Colors.white,
-                            buttonColor: Color(0xff3C5EA5),
-                            onTap: () {}),
+                          height: 50,
+                          width: 100,
+                          text: '+ New',
+                          textColor: Colors.white,
+                          buttonColor: Color(0xff3C5EA5),
+                          onTap: () => Navigator.of(context).push(
+                            Transition(
+                              child: EmergencyAlertSignalPage(),
+                              transitionEffect: TransitionEffect.FADE,
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ],
@@ -92,9 +99,220 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: 35,
               ),
               Container(
-                height: 320,
+                alignment: Alignment.center,
+                height: 300,
                 width: double.infinity,
                 color: Color(0xffF1F4F9),
+                padding: EdgeInsets.only(
+                  left: 30,
+                  top: 50,
+                  bottom: 60,
+                ),
+                child: Row(
+                  children: [
+                    Column(
+                      children: [
+                        Text(
+                          '26',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w600, fontSize: 17),
+                        ),
+                        Text(
+                          'Apr',
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                        Spacer(),
+                        Container(
+                          height: 50,
+                          width: 55,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white,
+                          ),
+                          child: Column(
+                            children: [
+                              Spacer(),
+                              Text(
+                                'Mon',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w600, fontSize: 13),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          height: 15,
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Column(
+                      children: [
+                        Text(
+                          '27',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w600, fontSize: 17),
+                        ),
+                        Text(
+                          'Apr',
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                        Spacer(),
+                        Container(
+                          height: 80,
+                          width: 55,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white,
+                          ),
+                          child: Column(
+                            children: [
+                              Spacer(),
+                              Text(
+                                'Tue',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w600, fontSize: 13),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          height: 15,
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Column(
+                      children: [
+                        Text(
+                          '28',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w600, fontSize: 17),
+                        ),
+                        Text(
+                          'Apr',
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                        Spacer(),
+                        Container(
+                          height: 120,
+                          width: 55,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Color(0xff3C5EA5),
+                          ),
+                          child: Column(
+                            children: [
+                              Spacer(),
+                              Text(
+                                'Wed',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 13,
+                                    color: Colors.white),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Column(
+                      children: [
+                        Text(
+                          '29',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w600, fontSize: 17),
+                        ),
+                        Text(
+                          'Apr',
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                        Spacer(),
+                        Container(
+                          height: 80,
+                          width: 55,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white,
+                          ),
+                          child: Column(
+                            children: [
+                              Spacer(),
+                              Text(
+                                'Thur',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w600, fontSize: 13),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          height: 15,
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Column(
+                      children: [
+                        Text(
+                          '26',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w600, fontSize: 17),
+                        ),
+                        Text(
+                          'Apr',
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                        Spacer(),
+                        Container(
+                          height: 50,
+                          width: 55,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white,
+                          ),
+                          child: Column(
+                            children: [
+                              Spacer(),
+                              Text(
+                                'Mon',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w600, fontSize: 13),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          height: 15,
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
               SizedBox(
                 height: 20,
@@ -225,7 +443,6 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
-      
     );
   }
 }
