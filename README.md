@@ -1,6 +1,5 @@
-# Contest
-
-A new Flutter project.
+# CONTEST
+Literally meaning Counter-terrorism Strategy, it is aimed at curbing all excesses of terrorism and ensuring citizens' safety and security in Nigeria, particularly in the Northern Districts.
 
 ## Getting Started
 
@@ -14,3 +13,5 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
